@@ -1,0 +1,31 @@
+{
+  "name": "bigbrains-api",
+  "version": "1.0.0",
+  "description": "restful api for the app bigbrains",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin/www",
+    "start_dev": "nodemon bin/www",
+    "debug": "node --inspect bin/www",
+    "test": "NODE_ENV=test jest --detectOpenHandles --runInBand --forceExit"
+  },
+  "author": "ulyssetsd",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "clarifai": "^2.9.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.20.13",
+    "nodemon": "^2.0.2",
+    "pg": "^8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "jest": "^25.2.7",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
