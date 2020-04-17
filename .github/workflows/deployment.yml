@@ -13,6 +13,6 @@ jobs:
     - name: Deploy to Heroku
       uses: AkhileshNS/heroku-deploy@v3.0.4
       with:
-        heroku_api_key: ${{HEROKU_API_KEY}}
-        heroku_email: ${{HEROKU_EMAIL}}
+        heroku_api_key: ${{secret.HEROKU_API_KEY}}
+        heroku_email: ${{secret.HEROKU_EMAIL}}
         heroku_app_name: bigbrains-api
